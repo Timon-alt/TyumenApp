@@ -1,3 +1,59 @@
 <resources>
     <string name="app_name">TyumenApp</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="recommendations_title">Recommendations</string>
+    
+    <!-- Categories strings -->
+    <string name="coffee_shops">Кофейни</string>
+    <string name="restaurants">Рестораны</string>
+    <string name="kid_friendly_places">Детские места</string>
+    <string name="parks">Парки</string>
+    <string name="shopping_centers">Торговые центры</string>
+
+    <!-- recommendations strings -->
+    <string name="coffee_cards_talking">Карты говорят</string>
+    <string name="coffee_brut">Кофе брют</string>
+    <string name="coffee_mogu">Mogu</string>
+    <string name="rest_ceh">Горячий цех</string>
+    <string name="rest_puri">Хочу Пури</string>
+    <string name="rest_tom">TomYamBar</string>
+    <string name="kids_place_atm">Атмосфера</string>
+    <string name="kids_place_nev">Невидалия</string>
+    <!-- Дополнить попозже 1 детское место -->
+    <string name="kids_place_">не помню</string>
+    <string name="park_zatyumenskyi">Парк Затюменский</string>
+    <string name="park_gagarin">Парк имени Гагарина</string>
+    <!-- Дополнить попозже 1 парк -->
+    <string name="center_kris">Кристалл</string>
+    <string name="center_moll">Сити Молл</string>
+    <string name="center_gallery">Галлерея Вояж</string>
+
+    <!-- recomendations decsriptions -->
+    <string name="recomedations_description">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Praesent ultrices congue rutrum. Phasellus elementum ipsum ac convallis aliquam. Suspendisse
+        eleifend eros a enim faucibus mollis. Nunc placerat, est vitae vestibulum blandit, dolor
+        diam fringilla tellus, eu euismod mauris neque at neque.
+        \n\n
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Praesent ultrices congue rutrum. Phasellus elementum ipsum ac convallis aliquam. Suspendisse
+        eleifend eros a enim faucibus mollis. Nunc placerat, est vitae vestibulum blandit, dolor
+        diam fringilla tellus, eu euismod mauris neque at neque.
+        \n\n
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Praesent ultrices congue rutrum. Phasellus elementum ipsum ac convallis aliquam. Suspendisse
+        eleifend eros a enim faucibus mollis. Nunc placerat, est vitae vestibulum blandit, dolor
+        diam fringilla tellus, eu euismod mauris neque at neque.
+        \n\n
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Praesent ultrices congue rutrum. Phasellus elementum ipsum ac convallis aliquam. Suspendisse
+        eleifend eros a enim faucibus mollis. Nunc placerat, est vitae vestibulum blandit, dolor
+        diam fringilla tellus, eu euismod mauris neque at neque.
+        \n\n
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Praesent ultrices congue rutrum. Phasellus elementum ipsum ac convallis aliquam. Suspendisse
+        eleifend eros a enim faucibus mollis. Nunc placerat, est vitae vestibulum blandit, dolor
+        diam fringilla tellus, eu euismod mauris neque at neque.
+    </string>
+
 </resources>
