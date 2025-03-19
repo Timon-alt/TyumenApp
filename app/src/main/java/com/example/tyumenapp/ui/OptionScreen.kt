@@ -1,11 +1,10 @@
 package com.example.tyumenapp.ui
 
-import android.graphics.pdf.content.PdfPageGotoLinkContent.Destination
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 
 @Composable
-fun DestinationScreen() {
-    Text(text = "Description screen")
+fun OptionScreen() {
+    Text(text = "option screen")
     //TODO: Заверстать экран
 }

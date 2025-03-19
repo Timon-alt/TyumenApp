@@ -1,7 +1,8 @@
 <resources>
     <string name="app_name">TyumenApp</string>
     <!-- Strings used for fragments for navigation -->
-    <string name="recommendations_title">Recommendations</string>
+    <string name="recommendations_title">Рекоммендации</string>
+    <string name="description_title">Описание</string>
     
     <!-- Categories strings -->
     <string name="coffee_shops">Кофейни</string>
@@ -55,5 +56,6 @@
         eleifend eros a enim faucibus mollis. Nunc placerat, est vitae vestibulum blandit, dolor
         diam fringilla tellus, eu euismod mauris neque at neque.
     </string>
+    <string name="back_button">Back</string>
 
 </resources>
