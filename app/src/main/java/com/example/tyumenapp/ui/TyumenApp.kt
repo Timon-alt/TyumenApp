@@ -3,8 +3,6 @@ package com.example.tyumenapp.ui
 import androidx.annotation.StringRes
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
-import androidx.compose.foundation.rememberScrollState
-import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.ArrowBackIosNew
 import androidx.compose.material3.ExperimentalMaterial3Api
@@ -58,7 +56,6 @@ fun TyumenAppBar(
                     )
                 }
             }
-
         }
     )
 }
@@ -88,7 +85,6 @@ fun TyumenApp(
             startDestination = TyumenScreen.Start.name,
             modifier = Modifier
                 .fillMaxSize()
-                .verticalScroll(rememberScrollState())
                 .padding(innerPadding)
         ) {
             composable(route = TyumenScreen.Start.name) {

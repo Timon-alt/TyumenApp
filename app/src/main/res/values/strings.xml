@@ -20,11 +20,11 @@
     <string name="rest_tom">TomYamBar</string>
     <string name="kids_place_atm">Атмосфера</string>
     <string name="kids_place_nev">Невидалия</string>
-    <!-- Дополнить попозже 1 детское место -->
+    <string name="kids_place_maks">Максилэнд</string>
     <string name="kids_place_">не помню</string>
     <string name="park_zatyumenskyi">Парк Затюменский</string>
     <string name="park_gagarin">Парк имени Гагарина</string>
-    <!-- Дополнить попозже 1 парк -->
+    <string name="park_gilev">Гилёвская роща</string>
     <string name="center_kris">Кристалл</string>
     <string name="center_moll">Сити Молл</string>
     <string name="center_gallery">Галлерея Вояж</string>
