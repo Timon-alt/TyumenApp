@@ -14,7 +14,7 @@ object LocalCategoriesDataProvider{
     fun getCategoryData(): List<Categories> {
         return listOf(
             Categories(
-                id = 1,
+                id = 0,
                 titleResourceId = R.string.coffee_shops,
                 imageResourceId = R.drawable.coffee_cup,
                 recommendationsList = listOf(
@@ -24,7 +24,7 @@ object LocalCategoriesDataProvider{
                 )
             ),
             Categories(
-                id = 2,
+                id = 1,
                 titleResourceId = R.string.restaurants,
                 imageResourceId = R.drawable.restaurant,
                 recommendationsList = listOf(
@@ -34,7 +34,7 @@ object LocalCategoriesDataProvider{
                 )
             ),
             Categories(
-                id = 3,
+                id = 2,
                 titleResourceId = R.string.kid_friendly_places,
                 imageResourceId = R.drawable.kids_places,
                 recommendationsList = listOf(
@@ -44,7 +44,7 @@ object LocalCategoriesDataProvider{
                 )
             ),
             Categories(
-                id = 4,
+                id = 3,
                 titleResourceId = R.string.parks,
                 imageResourceId = R.drawable.park,
                 recommendationsList = listOf(
@@ -54,7 +54,7 @@ object LocalCategoriesDataProvider{
                 )
             ),
             Categories(
-                id = 5,
+                id = 4,
                 titleResourceId = R.string.shopping_centers,
                 imageResourceId = R.drawable.shopping,
                 recommendationsList = listOf(

@@ -5,7 +5,7 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 
 @Composable
-fun DestinationScreen() {
+fun DescriptionScreen() {
     Text(text = "Description screen")
     //TODO: Заверстать экран
 }

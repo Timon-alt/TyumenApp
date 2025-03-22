@@ -14,15 +14,19 @@ import androidx.compose.material3.Text
 import androidx.compose.material3.TopAppBar
 import androidx.compose.material3.TopAppBarDefaults
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
+import androidx.lifecycle.viewmodel.compose.viewModel
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.currentBackStackEntryAsState
 import androidx.navigation.compose.rememberNavController
 import com.example.tyumenapp.R
+import com.example.tyumenapp.data.LocalCategoriesDataProvider
+import com.example.tyumenapp.model.Categories
 
 /*
  * enum class that represent the screens in the app
@@ -64,6 +68,8 @@ fun TyumenAppBar(
 fun TyumenApp(
     navController: NavHostController = rememberNavController()
 ) {
+    val viewModel: CategoriesViewModel = viewModel()
+    val uiState by viewModel.uiState.collectAsState()
     val backStackEntry by navController.currentBackStackEntryAsState()
     val currentScreen = TyumenScreen.valueOf(
         backStackEntry?.destination?.route ?: TyumenScreen.Start.name
@@ -78,8 +84,6 @@ fun TyumenApp(
             )
         }
     ) { innerPadding ->
-        // TODO: Создать viewModel и прописать сюда uiState
-
         NavHost(
             navController = navController,
             startDestination = TyumenScreen.Start.name,
@@ -88,13 +92,23 @@ fun TyumenApp(
                 .padding(innerPadding)
         ) {
             composable(route = TyumenScreen.Start.name) {
-                OptionScreen()
+                OptionScreen(
+                    options = LocalCategoriesDataProvider.getCategoryData(),
+                    onClick = { categories: Categories ->
+                        viewModel.getCurrentRecommendations(categoryId = categories.id)
+                        navController.navigate(TyumenScreen.Reccommendations.name)
+                    },
+                    uiState = uiState
+
+                )
             }
             composable(route = TyumenScreen.Reccommendations.name) {
-                OptionScreen()
+                RecommendationScreen(
+                    uiState = uiState
+                )
             }
             composable(route = TyumenScreen.Description.name) {
-                DestinationScreen()
+                DescriptionScreen()
             }
         }
     }
