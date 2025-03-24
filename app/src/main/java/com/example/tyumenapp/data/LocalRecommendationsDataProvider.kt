@@ -10,91 +10,91 @@ object LocalRecommendationsDataProvider {
 
     private val allRecommendations = listOf(
         Recommendations(
-            id = 1,
+            id = 0,
             titleResourceId = R.string.coffee_cards_talking,
             subtitleResourceId = R.string.recomedations_description,
             imageResourceId = R.drawable.coffe_cards
         ),
         Recommendations(
-            id = 2,
+            id = 1,
             titleResourceId = R.string.coffee_brut,
             subtitleResourceId = R.string.recomedations_description,
             imageResourceId = R.drawable.coffee_brut
         ),
         Recommendations(
-            id = 3,
+            id = 2,
             titleResourceId = R.string.coffee_mogu,
             subtitleResourceId = R.string.recomedations_description,
             imageResourceId = R.drawable.mogu
         ),
         Recommendations(
-            id = 4,
+            id = 3,
             titleResourceId = R.string.rest_ceh,
             subtitleResourceId = R.string.recomedations_description,
             imageResourceId = R.drawable.rest_ceh
         ),
         Recommendations(
-            id = 5,
+            id = 4,
             titleResourceId = R.string.rest_tom,
             subtitleResourceId = R.string.recomedations_description,
             imageResourceId = R.drawable.rest_tom
         ),
         Recommendations(
-            id = 6,
+            id = 5,
             titleResourceId = R.string.rest_puri,
             subtitleResourceId = R.string.recomedations_description,
             imageResourceId = R.drawable.rest_puri
         ),
         Recommendations(
-            id = 7,
+            id = 6,
             titleResourceId = R.string.kids_place_atm,
             subtitleResourceId = R.string.recomedations_description,
             imageResourceId = R.drawable.places_atm
         ),
         Recommendations(
-            id = 8,
+            id = 7,
             titleResourceId = R.string.kids_place_nev,
             subtitleResourceId = R.string.recomedations_description,
             imageResourceId = R.drawable.places_nev
         ),
         Recommendations(
-            id = 9,
+            id = 8,
             titleResourceId = R.string.kids_place_maks,
             subtitleResourceId = R.string.recomedations_description,
             imageResourceId = R.drawable.kids_places
         ),
         Recommendations(
-            id = 10,
+            id = 9,
             titleResourceId = R.string.park_zatyumenskyi,
             subtitleResourceId = R.string.recomedations_description,
             imageResourceId = R.drawable.park
         ),
         Recommendations(
-            id = 11,
+            id = 10,
             titleResourceId = R.string.park_gagarin,
             subtitleResourceId = R.string.recomedations_description,
             imageResourceId = R.drawable.park
         ),
         Recommendations(
-            id = 12,
+            id = 11,
             titleResourceId = R.string.park_gilev,
             subtitleResourceId = R.string.recomedations_description,
             imageResourceId = R.drawable.park
         ),
         Recommendations(
-            id = 13,
+            id = 12,
             titleResourceId = R.string.center_kris,
             subtitleResourceId = R.string.recomedations_description,
             imageResourceId = R.drawable.center_kris
         ),
         Recommendations(
-            id = 14,
+            id = 13,
             titleResourceId = R.string.center_moll,
             subtitleResourceId = R.string.recomedations_description,
             imageResourceId = R.drawable.center_moll
         ),
         Recommendations(
-            id = 15,
+            id = 14,
             titleResourceId = R.string.center_gallery,
             subtitleResourceId = R.string.recomedations_description,
             imageResourceId = R.drawable.shopping

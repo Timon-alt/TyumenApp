@@ -38,7 +38,6 @@ class CategoriesViewModel : ViewModel() {
         _uiState.update {
             CategoriesUiState(
                 currentRecommendations = setCurrentRecommendations(categoryId)
-
             )
         }
     }
