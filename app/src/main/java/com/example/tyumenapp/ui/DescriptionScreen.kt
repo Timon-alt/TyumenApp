@@ -16,8 +16,12 @@ import com.example.tyumenapp.data.LocalRecommendationsDataProvider
 import com.example.tyumenapp.model.Recommendations
 
 @Composable
-fun DescriptionScreen() {
-    Text(text = "Description screen")
+fun DescriptionScreen(
+    uiState: CategoriesUiState
+) {
+    Details(
+        recommendations = uiState.currentRecommendation
+    )
 
 }
 

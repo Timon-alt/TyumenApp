@@ -3,6 +3,7 @@ package com.example.tyumenapp.ui
 import android.util.Log
 import androidx.lifecycle.ViewModel
 import com.example.tyumenapp.data.LocalCategoriesDataProvider
+import com.example.tyumenapp.data.LocalRecommendationsDataProvider
 import com.example.tyumenapp.model.Recommendations
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
@@ -30,14 +31,26 @@ class CategoriesViewModel : ViewModel() {
             )
     }
 
-    private fun setCurrentRecommendations(categoryId: Int): List<Recommendations> {
+    private fun setCurrentListRecommendations(categoryId: Int): List<Recommendations> {
         return LocalCategoriesDataProvider.getCategoryData()[categoryId].recommendationsList
     }
 
-    fun getCurrentRecommendations(categoryId: Int) {
+    fun getCurrentListRecommendations(categoryId: Int) {
         _uiState.update {
             CategoriesUiState(
-                currentRecommendations = setCurrentRecommendations(categoryId)
+                currentListRecommendations = setCurrentListRecommendations(categoryId)
+            )
+        }
+    }
+
+    private fun setCurrentRecommendation(recommendationId: Int): Recommendations {
+        return LocalRecommendationsDataProvider.getRecommendationById(recommendationId)
+    }
+
+    fun getRecommendation(recommendationId: Int) {
+        _uiState.update {
+            CategoriesUiState(
+                currentRecommendation = setCurrentRecommendation(recommendationId)
             )
         }
     }

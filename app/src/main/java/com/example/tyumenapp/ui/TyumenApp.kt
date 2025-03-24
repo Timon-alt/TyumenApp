@@ -26,7 +26,9 @@ import androidx.navigation.compose.currentBackStackEntryAsState
 import androidx.navigation.compose.rememberNavController
 import com.example.tyumenapp.R
 import com.example.tyumenapp.data.LocalCategoriesDataProvider
+import com.example.tyumenapp.data.LocalRecommendationsDataProvider
 import com.example.tyumenapp.model.Categories
+import com.example.tyumenapp.model.Recommendations
 
 /*
  * enum class that represent the screens in the app
@@ -95,7 +97,7 @@ fun TyumenApp(
                 OptionScreen(
                     options = LocalCategoriesDataProvider.getCategoryData(),
                     onClick = { categories: Categories ->
-                        viewModel.getCurrentRecommendations(categoryId = categories.id)
+                        viewModel.getCurrentListRecommendations(categoryId = categories.id)
                         navController.navigate(TyumenScreen.Reccommendations.name)
                     },
                     uiState = uiState
@@ -104,11 +106,18 @@ fun TyumenApp(
             }
             composable(route = TyumenScreen.Reccommendations.name) {
                 RecommendationScreen(
-                    uiState = uiState
+                    recommendationsList = uiState.currentListRecommendations,
+                    uiState = uiState,
+                    onClick = { recommendation: Recommendations ->
+                        viewModel.getRecommendation(recommendationId = recommendation.id)
+                        navController.navigate(TyumenScreen.Description.name)
+                    }
                 )
             }
             composable(route = TyumenScreen.Description.name) {
-                DescriptionScreen()
+                DescriptionScreen(
+                    uiState = uiState
+                )
             }
         }
     }
